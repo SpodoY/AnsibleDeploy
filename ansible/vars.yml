@@ -1,0 +1,38 @@
+ansible_connection: winrm
+ansible_winrm_transport: credssp
+
+#Domain account to connect VIA winrm. (Must be domain account with admin permissions)
+ansible_user: Administrator@raccoons.at
+ansible_password: 7Zwerge$
+
+ansible_winrm_server_cert_validation: ignore
+ansible_port: 5986 #5985 for http
+ansible_become: false
+
+#Media locations (do not include trailing \)
+citrix_path: D:\
+sql_path: D:\Support\SQLExpress
+
+#Admin Group to add to CVAD site
+AdminGroup: raccoons\Domain Admins
+
+#Storefront URL
+HostbaseUrl: http://storefront-xtech.raccoons.at
+
+#Netscaler Gateway URL
+GatewayUrl: https://citrix-lab.acpx.at
+
+# SQL Instance Name
+sql_instance_name: MSSQLSERVER
+
+#SQL service account
+sql_svc_account: raccoons\sql_svc
+sql_svc_password: 7Zwerge$
+
+#SQL Admins
+sql_admins: raccoons\sqladmins
+
+#Apply Windows Updates
+apply_win_updates: false
+
+

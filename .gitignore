@@ -1,6 +1,4 @@
-*.tfvars
-vars.yml
-.terraform
 .vscode
+.terraform
 vaultedsqlsvc.yml
 *.lic
