@@ -39,7 +39,8 @@
   when: sf_info.stat.exists == False
   
 - name: Check if one or more deployed
-  win_stat: path= 'C:\Logs\passcode.txt'
+  win_stat: 
+    path: 'C:\Logs\passcode.txt'
   register: stat_file
 
 # This part below is only needed when 2 or more are installed, otherwise this will throw an error :(
