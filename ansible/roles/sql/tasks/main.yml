@@ -21,7 +21,7 @@
       - '/q' 
       - '/ACTION=Install' 
       - '/FEATURES=SQL' 
-      - '/INSTANCENAME="{{ sql_instace_name }}"' 
+      - '/INSTANCENAME="{{ sql_instance_name }}"' 
       - '/SQLSVCACCOUNT="{{ sql_svc_account }}"' 
       - '/SQLSVCPASSWORD="{{ sql_svc_password }}"' 
       - '/SQLSYSADMINACCOUNTS="{{ sql_admins }}"' 
