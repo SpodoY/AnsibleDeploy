@@ -30,15 +30,15 @@
   roles:
     - storefront-init
 
-- hosts: storefront.1
-  roles:
-    - storefront-join
+#- hosts: storefront[1]
+#  roles:
+#    - storefront-join
 
 - hosts: vda
   roles:
     - vda # Create new server to "abuse" as client
 
-- hosts: ddc.0
+- hosts: ddc[0]
   gather_facts: no
   roles:
     - site-hydrate

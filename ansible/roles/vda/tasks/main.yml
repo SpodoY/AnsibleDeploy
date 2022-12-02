@@ -33,7 +33,7 @@
 
 - name: Resume VDA Install
   win_package:
-    path: C:\Program Files\Citrix\XenDesktopSetup\XenDesktopVdaSetup.exe
+    path: C:\Program Files\Citrix\XenDesktopVdaSetup\XenDesktopVdaSetup.exe
     state: present
     expected_return_code: [0, 3, 3010]
     creates_service: BrokerAgent

@@ -4,7 +4,7 @@ FarmServers: "{{ hostvars[groups['ddc'][0]]['ansible_fqdn'] }}"
 StoreVirtualPath: /Citrix/Store
 TransportType: HTTP
 GatewayUrl: https://mycitrix.myexternal.com
-GatewaySTAUrls: http://{{ hostvars[groups['ddc.0'][0]]['ansible_fqdn'] }}/scripts/ctxa.dll
+GatewaySTAUrls: http://{{ hostvars[groups['ddc'][0]]['ansible_fqdn'] }}/scripts/ctxa.dll
 # Add more Gateways as you like
 # http://{{ hostvars[groups['ddc'][1]]['ansible_fqdn'] }}/scripts/ctxa.dll
 GatewayName: NSG1
